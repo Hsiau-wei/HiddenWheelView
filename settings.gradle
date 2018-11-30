@@ -1,1 +1,1 @@
-include ':sample', ':hiddenwheelviewlibrary'
+include ':sample', ':library'
