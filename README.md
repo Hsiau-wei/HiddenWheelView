@@ -54,7 +54,7 @@ wheelView.setOnSnapListener(new HiddenWheelView.OnSnapListener() {
 
 ## Note
 
-When the attribute `android:layout_height` is set to `wrap_content` , the height of the view will be set to the product of the values of the `itemHeight` and `itemCount` attributes; but when `android:layout_height` is set to `match_parent` or a specific dimension (e.g. `400dp` ), the `itemCount` and `itemHeight` attributes will be reduntant, that is, the view will display the suitable number of items.
+When the attribute `android:layout_height` is set to `wrap_content` , the height of the view will be set to the product of the values of the `itemHeight` and `itemCount` attributes; but when `android:layout_height` is set to `match_parent` or a specific dimension (e.g. `400dp` ), the `itemCount` and `itemHeight` attributes will be reduntant, that is, the view will display a suitable number of items.
 
 ## Changelog
 
