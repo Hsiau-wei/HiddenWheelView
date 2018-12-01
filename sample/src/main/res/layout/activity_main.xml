@@ -15,11 +15,17 @@
     <me.tictok.hiddenwheelviewlibrary.HiddenWheelView
         android:id="@+id/wheelView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         app:allowVibrate="true"
         app:itemCount="5"
         app:itemHeight="60dp">
 
     </me.tictok.hiddenwheelviewlibrary.HiddenWheelView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom"
+        android:textColor="#fff"/>
 
 </LinearLayout>
