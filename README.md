@@ -8,16 +8,6 @@ A custom Android wheel view that is shown as a wheel view only when scrolling. A
 
 ## Usage
 
-Add repositories to `build.gradle` of your project:
-
-```groovy
-allprojects {
-    repositories {
-        maven { url 'https://dl.bintray.com/hsiau-wei/maven' }
-    }
-}
-```
-
 Add dependencies to your app's `build.gradle` :
 
 ```groovy
