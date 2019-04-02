@@ -12,7 +12,7 @@ Add dependencies to your app's `build.gradle` :
 
 ```groovy
 dependencies {
-	compile 'me.tictok:hiddenwheelview:1.0.1'
+	implementation 'me.tictok:hiddenwheelview:1.0.1'
 }
 ```
 
