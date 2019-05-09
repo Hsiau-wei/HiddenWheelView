@@ -1,4 +1,4 @@
-package me.tictok.hiddenwheelviewlibrary;
+package me.tictok.library;
 
 import org.junit.Test;
 

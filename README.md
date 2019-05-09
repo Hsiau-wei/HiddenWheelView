@@ -1,6 +1,13 @@
 # HiddenWheelView
 
-A custom Android wheel view that is shown as a wheel view only when scrolling. After the scroll stops, the wheel disappears and it becomes a normal view.
+A custom Android wheel view that is shown as a wheel view only when scrolling. After the scroll stops, the wheel disappears and it becomes a normal view. 
+
+## Features
+
+- Appearance that changes with the user's actions
+- Listener for the current position while scrolling
+- Vibration feedback providing a comfortable UX
+- Customizable showing/hiding animation duration
 
 ## Screenshot
 
@@ -12,44 +19,43 @@ Add dependencies to your app's `build.gradle` :
 
 ```groovy
 dependencies {
-	implementation 'me.tictok:hiddenwheelview:1.0.1'
+	implementation 'me.tictok:hiddenwheelview:2.0.0'
 }
 ```
 
 Put the view in your layout:
 
 ```xml
-<me.tictok.hiddenwheelviewlibrary.HiddenWheelView
+<me.tictok.library.HiddenWheelView
         android:id="@+id/wheelView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:allowVibrate="true"
         app:itemCount="5"
-        app:itemHeight="60dp" />
+        app:itemHeight="60dp"
+        app:animationDuration="450">
 ```
 
 Customize an adapter class extending `RecyclerView.Adapter` and set it as the adapter of the view:
 
-```java
-HiddenWheelView wheelView = findViewById(R.id.wheelView);
-WheelAdapter adapter = new WheelAdapter(list, R.layout.wheel_item);
-wheelView.setAdapter(adapter);
+```Kotlin
+val adapter = WheelAdapter(list, R.layout.wheel_item);
+wheelView.setAdapter(adapter)
 ```
 
 You can set an `OnSnapListener` if possible to listen to the snap while scrolling:
 
-```java
-wheelView.setOnSnapListener(new HiddenWheelView.OnSnapListener() {
-	@Override
-	public void onSnap(int position) {
-		// TODO
-	}
+```Kotlin
+wheelView.onSnapListener = object : HiddenWheelView.OnSnapListener {
+            override fun onStopScrolling() {
+                // TODO
+            }
 
-	@Override
-	public void onStopScrolling() {
-		// TODO
-	}
-});
+            override fun onSnap(position: Int) {
+                // TODO
+            }
+
+        }
 ```
 
 ## Note
@@ -58,6 +64,10 @@ When the attribute `android:layout_height` is set to `wrap_content` , the height
 
 ## Changelog
 
+- 2.0.0 (May 09, 2019)
+  - Rewrite all code with Kotlin
+  - Add showing and hiding animation effects
+  - Fix vibrating when the view is just displayed
 - 1.0.1 (Dec 01, 2018)
   - Fix item list not filling the view when setting `android:layout_height` to `match_parent`
 - 1.0.0 (Dec 01, 2018)

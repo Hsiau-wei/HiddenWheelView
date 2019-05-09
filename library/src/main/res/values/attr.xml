@@ -4,5 +4,6 @@
         <attr name="itemHeight" format="dimension" />
         <attr name="itemCount" format="integer" />
         <attr name="allowVibrate" format="boolean" />
+        <attr name="animationDuration" format="integer" />
     </declare-styleable>
 </resources>

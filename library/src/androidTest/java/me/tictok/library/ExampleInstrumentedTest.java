@@ -1,4 +1,4 @@
-package me.tictok.hiddenwheelviewlibrary;
+package me.tictok.library;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
