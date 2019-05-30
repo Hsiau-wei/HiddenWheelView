@@ -71,6 +71,7 @@ class HiddenWheelView(context: Context, attributeSet: AttributeSet? = null) : Fr
         }
 
         mRecyclerView = CustomRecyclerView(context, attributeSet)
+        mRecyclerView.id = View.generateViewId()
         mLayoutManager = LinearLayoutManager(context)
         mRecyclerView.layoutManager = mLayoutManager
         mRecyclerView.clipToPadding = false

@@ -64,6 +64,8 @@ When the attribute `android:layout_height` is set to `wrap_content` , the height
 
 ## Changelog
 
+- 2.0.1 (May 30, 2019)
+  - Fix crash when two or more HiddenWheelViews appearing together restore their instance states
 - 2.0.0 (May 09, 2019)
   - Rewrite all code with Kotlin
   - Add showing and hiding animation effects

@@ -40,7 +40,7 @@ publish {
     userOrg = 'hsiau-wei'
     groupId = 'me.tictok'
     artifactId = 'hiddenwheelview'
-    publishVersion = '2.0.0'
+    publishVersion = '2.0.1'
     desc = 'A custom Android wheel view that is shown as a wheel view only when scrolling.'
     website = 'https://github.com/Hsiau-wei/HiddenWheelView'
 }
